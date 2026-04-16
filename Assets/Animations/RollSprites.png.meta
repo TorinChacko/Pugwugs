@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: 25bc998f690af84468f300f8b0d1c708
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2991907395344534450
+    second: RollSprites_0
+  - first:
+      213: 7880693025003145791
+    second: RollSprites_1
+  - first:
+      213: -7626044628772806667
+    second: RollSprites_2
+  - first:
+      213: 6308212699844197853
+    second: RollSprites_3
+  - first:
+      213: -4139106964771122611
+    second: RollSprites_4
+  - first:
+      213: -4091380567049003639
+    second: RollSprites_5
+  - first:
+      213: -8235961359951193817
+    second: RollSprites_6
+  - first:
+      213: 5795489742922308052
+    second: RollSprites_7
+  - first:
+      213: 1299470489309658757
+    second: RollSprites_8
+  - first:
+      213: -7810860437876316211
+    second: RollSprites_9
+  - first:
+      213: -5665413119883273106
+    second: RollSprites_10
+  - first:
+      213: 4706759231655617564
+    second: RollSprites_11
+  - first:
+      213: 7297186874780045076
+    second: RollSprites_12
+  - first:
+      213: -558330909175985833
+    second: RollSprites_13
+  - first:
+      213: 816617477327119834
+    second: RollSprites_14
+  - first:
+      213: -4005704040171955903
+    second: RollSprites_15
+  - first:
+      213: -2472936552870965704
+    second: RollSprites_16
+  - first:
+      213: -8549849091083318647
+    second: RollSprites_17
+  - first:
+      213: -6767625538432784144
+    second: RollSprites_18
+  - first:
+      213: 3134804384325572243
+    second: RollSprites_19
+  - first:
+      213: -8703295598858238453
+    second: RollSprites_20
+  - first:
+      213: 7764748929865613483
+    second: RollSprites_21
+  - first:
+      213: -5248607097544402950
+    second: RollSprites_22
+  - first:
+      213: -2032773923560301298
+    second: RollSprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 380
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RollSprites_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2841
+        width: 379
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44ff93631c9a76d0800000000000000
+      internalID: -2991907395344534450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2841
+        width: 324
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a06337d88dd5d60800000000000000
+      internalID: 7880693025003145791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2837
+        width: 292
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff98bc80d8da2690800000000000000
+      internalID: -7626044628772806667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2831
+        width: 330
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd32d537064b8750800000000000000
+      internalID: 6308212699844197853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 2820
+        width: 354
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42d87d3520fe86c0800000000000000
+      internalID: -4139106964771122611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_5
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 2831
+        width: 329
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d9b142d0f7837c0800000000000000
+      internalID: -4091380567049003639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2841
+        width: 388
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729144477ccf3bd80800000000000000
+      internalID: -8235961359951193817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_7
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 2827
+        width: 414
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9dd422737bd6050800000000000000
+      internalID: 5795489742922308052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_9
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 2497
+        width: 451
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7ea32c0df3a9390800000000000000
+      internalID: -7810860437876316211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_10
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 2521
+        width: 472
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c158bb8c86061b0800000000000000
+      internalID: -5665413119883273106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_11
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 2535
+        width: 520
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14af1e6594c15140800000000000000
+      internalID: 4706759231655617564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_12
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2521
+        width: 552
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f48eaecc0d44560800000000000000
+      internalID: 7297186874780045076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2102
+        width: 576
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759c17b0ff86048f0800000000000000
+      internalID: -558330909175985833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_14
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 2097
+        width: 558
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5657dd445355b00800000000000000
+      internalID: 816617477327119834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_15
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 2108
+        width: 755
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149143a0661e868c0800000000000000
+      internalID: -4005704040171955903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1822
+        width: 265
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a48cafc85d85980800000000000000
+      internalID: -8549849091083318647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_18
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1808
+        width: 248
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f82ad0ed609412a0800000000000000
+      internalID: -6767625538432784144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1825
+        width: 269
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39610188aff018b20800000000000000
+      internalID: 3134804384325572243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_20
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1843
+        width: 214
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0685dec3cea73780800000000000000
+      internalID: -8703295598858238453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_21
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1836
+        width: 266
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba00cb6230ee1cb60800000000000000
+      internalID: 7764748929865613483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2494
+        width: 413
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1a2010c39b19d48a3d6e91fc1d7543
+      internalID: 1299470489309658757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RollSprites_16
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1815
+        width: 331
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02351c8875ec206498cec6e59c471d81
+      internalID: -2472936552870965704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0b30de8da45696646acd4ecce28bf648
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      RollSprites_0: -2991907395344534450
+      RollSprites_1: 7880693025003145791
+      RollSprites_10: -5665413119883273106
+      RollSprites_11: 4706759231655617564
+      RollSprites_12: 7297186874780045076
+      RollSprites_13: -558330909175985833
+      RollSprites_14: 816617477327119834
+      RollSprites_15: -4005704040171955903
+      RollSprites_16: -2472936552870965704
+      RollSprites_17: -8549849091083318647
+      RollSprites_18: -6767625538432784144
+      RollSprites_19: 3134804384325572243
+      RollSprites_2: -7626044628772806667
+      RollSprites_20: -8703295598858238453
+      RollSprites_21: 7764748929865613483
+      RollSprites_22: -5248607097544402950
+      RollSprites_23: -311017655
+      RollSprites_24: 300031516
+      RollSprites_3: 6308212699844197853
+      RollSprites_4: -4139106964771122611
+      RollSprites_5: -4091380567049003639
+      RollSprites_6: -8235961359951193817
+      RollSprites_7: 5795489742922308052
+      RollSprites_8: 1299470489309658757
+      RollSprites_9: -7810860437876316211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

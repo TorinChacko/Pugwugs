@@ -296,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 306357559}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.54, y: 9.22, z: 0}
+  m_LocalPosition: {x: -1.1399999, y: 3.7500002, z: 0}
   m_LocalScale: {x: 40, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -385,7 +385,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.58183694, g: 0.7483406, b: 0.78867924, a: 0}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -406,11 +406,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -436,7 +436,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.56, y: 3.63, z: -26.223206}
-  m_LocalScale: {x: 2.1840003, y: 0.056, z: 0}
+  m_LocalScale: {x: 1.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 1693086659}
-  smoothSpeed: 10
+  smoothSpeed: 5
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.02, y: -3.57, z: 0}
-  m_LocalScale: {x: 76, y: 2, z: 1}
+  m_LocalScale: {x: 40, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1127,7 +1127,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8793639957104055765, guid: b09121089f0cb0f45a9bc3dc7b54f998, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -1144,8 +1144,8 @@ Transform:
   m_GameObject: {fileID: 1693086655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: -1.45, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: -0.04, y: -1.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1025610201}
@@ -1164,20 +1164,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 4
-  airControl: 2
+  airControl: 1
   jumpForce: 12
   groundCheck: {fileID: 1025610201}
   groundBoxSize: {x: 1, y: 0.1}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  coyoteTime: 0.3
+  coyoteTime: 0.15
   jumpBufferTime: 0.15
-  dashForce: 8
-  dashTime: 1
-  dashBufferTime: 0.15
-  backDashForce: 8
-  backDashTime: 1.77
+  dashForce: 18
+  dashTime: 0.55
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
