@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 4
   airControl: 2
-  jumpForce: 15
+  jumpForce: 12
   groundCheck: {fileID: 1025610201}
   groundBoxSize: {x: 1, y: 0.1}
   groundLayer:
@@ -1173,8 +1173,8 @@ MonoBehaviour:
     m_Bits: 64
   coyoteTime: 0.3
   jumpBufferTime: 0.15
-  dashForce: 10
-  dashTime: 2
+  dashForce: 8
+  dashTime: 1
   dashBufferTime: 0.15
   backDashForce: 8
   backDashTime: 1.77
@@ -1188,7 +1188,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   dashGhostPrefab: {fileID: 6642979805141359755, guid: ea3d8d7e78c162a4bba60780ce50d2a4, type: 3}
   ghostSpawnRate: 0.05
-  comboResetTime: 0.6
 --- !u!95 &1693086661
 Animator:
   serializedVersion: 7

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -68,10 +69,26 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 dashDir;
     private int dashType;
 
+    // DASH TRAIL
+    public GameObject dashGhostPrefab;
+    public float ghostSpawnRate = 0.05f;
+    private float ghostTimer;
+
+    // =========================
+    // ATTACK SYSTEM
+    // =========================
+    [Header("Attack")]
+    public float comboResetTime = 0.6f;
+
+    private int comboStep = 0;
+    private float comboTimer;
+    private bool isAttacking;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         input = new InputSystem_Actions();
+
         rb.freezeRotation = true;
 
         sr = GetComponent<SpriteRenderer>();
@@ -94,6 +111,8 @@ public class PlayerMovement : MonoBehaviour
         input.Player.Dash.performed += ctx => dashBufferTimer = dashBufferTime;
 
         input.Player.BackDash.performed += ctx => TryBackDash();
+
+        input.Player.Attack.performed += ctx => TryAttack();
     }
 
     void OnDisable()
@@ -109,11 +128,25 @@ public class PlayerMovement : MonoBehaviour
         HandleDash();
         UpdateCameraFeel();
 
-        // Dash buffer execution
+        comboTimer -= Time.deltaTime;
+        if (comboTimer <= 0)
+            comboStep = 0;
+
         if (dashBufferTimer > 0 && canDash && !isDashing)
         {
             TryDash();
             dashBufferTimer = 0;
+        }
+
+        if (isDashing)
+        {
+            ghostTimer -= Time.deltaTime;
+
+            if (ghostTimer <= 0f)
+            {
+                SpawnGhost();
+                ghostTimer = ghostSpawnRate;
+            }
         }
 
         if (moveInput != Vector2.zero)
@@ -122,25 +155,21 @@ public class PlayerMovement : MonoBehaviour
             facingDir = Mathf.Sign(moveInput.x);
         }
 
-        // Visual flip
+        // Flip
         if (sr != null)
         {
             if (isDashing)
             {
-                if (!isBackDashing)
-                {
-                    if (dashDir.x != 0)
-                        sr.flipX = dashDir.x > 0;
-                }
+                if (!isBackDashing && dashDir.x != 0)
+                    sr.flipX = dashDir.x > 0;
             }
-            else
+            else if (moveInput.x != 0)
             {
-                if (moveInput.x != 0)
-                    sr.flipX = moveInput.x > 0;
+                sr.flipX = moveInput.x > 0;
             }
         }
 
-        // Animation
+        // Animator
         if (animator != null)
         {
             float yVel = isDashing ? dashDir.y * dashForce : rb.linearVelocity.y;
@@ -156,14 +185,44 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing)
         {
+            rb.gravityScale = 0f; // 🔥 GRAVITY FULLY SUSPENDED HERE
             rb.linearVelocity = dashVelocity;
         }
         else
         {
+            rb.gravityScale = originalGravity;
             Move();
         }
     }
 
+    // =========================
+    // ATTACK LOGIC
+    // =========================
+    void TryAttack()
+    {
+        if (isDashing) return;
+
+        comboTimer = comboResetTime;
+        isAttacking = true;
+
+        comboStep++;
+        if (comboStep > 3)
+            comboStep = 1;
+
+        animator?.SetInteger("ComboStep", comboStep);
+        animator?.SetTrigger("Attack");
+
+        Invoke(nameof(EndAttack), 0.2f);
+    }
+
+    void EndAttack()
+    {
+        isAttacking = false;
+    }
+
+    // =========================
+    // MOVEMENT
+    // =========================
     void Move()
     {
         float control = IsGrounded() ? 1f : airControl;
@@ -208,6 +267,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // =========================
+    // DASH
+    // =========================
     void TryDash()
     {
         if (!canDash || isDashing) return;
@@ -222,26 +284,22 @@ public class PlayerMovement : MonoBehaviour
         if (dir == Vector2.zero)
             dir = new Vector2(facingDir, 0f);
 
-        dir = dir.normalized;
+        dashDir = dir.normalized;
+        dashVelocity = dashDir * dashForce;
 
-        dashDir = dir;
-        dashVelocity = dir * dashForce;
-
-        rb.gravityScale = 0f;
         rb.linearVelocity = dashVelocity;
 
-        if (Mathf.Abs(dir.y) > 0.6f && Mathf.Abs(dir.x) < 0.6f)
+        if (Mathf.Abs(dashDir.y) > 0.6f && Mathf.Abs(dashDir.x) < 0.6f)
             dashType = 1;
-        else if (Mathf.Abs(dir.x) > 0.6f && Mathf.Abs(dir.y) < 0.6f)
+        else if (Mathf.Abs(dashDir.x) > 0.6f && Mathf.Abs(dashDir.y) < 0.6f)
             dashType = 0;
         else
             dashType = 2;
 
-        if (animator != null)
-        {
-            animator.SetInteger("DashType", dashType);
-            animator.SetTrigger("Dash");
-        }
+        animator?.SetInteger("DashType", dashType);
+        animator?.SetTrigger("Dash");
+
+        StartCoroutine(DashFreeze());
     }
 
     void TryBackDash()
@@ -256,15 +314,13 @@ public class PlayerMovement : MonoBehaviour
         float dir = -facingDir;
 
         dashDir = new Vector2(dir, 0f);
-        dashVelocity = new Vector2(dir * backDashForce, 0f);
+        dashVelocity = dashDir * backDashForce;
 
-        rb.gravityScale = 0f;
         rb.linearVelocity = dashVelocity;
 
-        if (animator != null)
-        {
-            animator.SetTrigger("BackDash");
-        }
+        animator?.SetTrigger("BackDash");
+
+        StartCoroutine(DashFreeze());
     }
 
     void HandleDash()
@@ -280,14 +336,14 @@ public class PlayerMovement : MonoBehaviour
 
             rb.gravityScale = originalGravity;
 
-            // Prevent floaty feeling
             if (!IsGrounded() && rb.linearVelocity.y > -2f)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
-            }
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y);
         }
     }
 
+    // =========================
+    // WALL
+    // =========================
     void HandleWallSlide()
     {
         bool right = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallLayer);
@@ -296,23 +352,17 @@ public class PlayerMovement : MonoBehaviour
         isTouchingWall = right || left;
         wallDir = right ? 1 : left ? -1 : 0;
 
-        if (isTouchingWall && !IsGrounded() && rb.linearVelocity.y < 0)
-        {
-            isWallSliding = true;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -wallSlideSpeed);
-        }
-        else
-        {
-            isWallSliding = false;
-        }
+        isWallSliding = isTouchingWall && !IsGrounded() && rb.linearVelocity.y < 0;
     }
 
+    // =========================
+    // CAMERA
+    // =========================
     void UpdateCameraFeel()
     {
         if (cam == null) return;
 
-        Vector3 target = transform.position;
-        cam.position = Vector3.Lerp(cam.position, target, cameraLerp * Time.deltaTime);
+        cam.position = Vector3.Lerp(cam.position, transform.position, cameraLerp * Time.deltaTime);
     }
 
     bool IsGrounded()
@@ -323,5 +373,26 @@ public class PlayerMovement : MonoBehaviour
             0f,
             groundLayer
         );
+    }
+
+    // =========================
+    // EFFECTS
+    // =========================
+    IEnumerator DashFreeze()
+    {
+        float originalTime = Time.timeScale;
+
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(0.03f);
+        Time.timeScale = originalTime;
+    }
+
+    void SpawnGhost()
+    {
+        GameObject ghost = Instantiate(dashGhostPrefab, transform.position, transform.rotation);
+
+        SpriteRenderer ghostSR = ghost.GetComponent<SpriteRenderer>();
+        ghostSR.sprite = sr.sprite;
+        ghostSR.flipX = sr.flipX;
     }
 }
