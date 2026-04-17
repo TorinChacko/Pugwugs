@@ -1174,7 +1174,7 @@ MonoBehaviour:
   coyoteTime: 0.3
   jumpBufferTime: 0.15
   dashForce: 10
-  dashTime: 1.5
+  dashTime: 2
   dashBufferTime: 0.09
   backDashForce: 8
   backDashTime: 1.77

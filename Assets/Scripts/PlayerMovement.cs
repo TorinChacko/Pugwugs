@@ -383,7 +383,7 @@ public class PlayerMovement : MonoBehaviour
         float originalTime = Time.timeScale;
 
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(0.03f);
+        yield return new WaitForSecondsRealtime(0f);
         Time.timeScale = originalTime;
     }
 
