@@ -1187,7 +1187,7 @@ MonoBehaviour:
   cameraLerp: 8
   animator: {fileID: 0}
   dashGhostPrefab: {fileID: 6642979805141359755, guid: ea3d8d7e78c162a4bba60780ce50d2a4, type: 3}
-  ghostSpawnRate: 0.05
+  ghostSpawnRate: 0.02
   comboResetTime: 0.6
 --- !u!95 &1693086661
 Animator:
