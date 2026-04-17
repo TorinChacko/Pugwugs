@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: fc82b50521d60eb4aa19f87ad69e8dfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8522073808704521438
+    second: groundDash_0
+  - first:
+      213: 4792975130560448295
+    second: groundDash_1
+  - first:
+      213: -19488923186782201
+    second: groundDash_2
+  - first:
+      213: -8969332842497462816
+    second: groundDash_3
+  - first:
+      213: -6368345551540990496
+    second: groundDash_4
+  - first:
+      213: 6661683623672943677
+    second: groundDash_5
+  - first:
+      213: 6712691111177576546
+    second: groundDash_6
+  - first:
+      213: 591222293686766267
+    second: groundDash_7
+  - first:
+      213: -569682939207727617
+    second: groundDash_8
+  - first:
+      213: 8654439673291373540
+    second: groundDash_9
+  - first:
+      213: 8171896266476796476
+    second: groundDash_10
+  - first:
+      213: 1974721932706708327
+    second: groundDash_11
+  - first:
+      213: -5298995886053114169
+    second: groundDash_12
+  - first:
+      213: -1819447674198018928
+    second: groundDash_13
+  - first:
+      213: -2124577048829440886
+    second: groundDash_14
+  - first:
+      213: 1098822668887200733
+    second: groundDash_15
+  - first:
+      213: -6877083793181648758
+    second: groundDash_16
+  - first:
+      213: -2919997394389718079
+    second: groundDash_17
+  - first:
+      213: -7481565810825112002
+    second: groundDash_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: groundDash_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2905
+        width: 186
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed44e752afc744670800000000000000
+      internalID: 8522073808704521438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2908
+        width: 174
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727465aac71148240800000000000000
+      internalID: 4792975130560448295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2914
+        width: 174
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700a5687de2cabff0800000000000000
+      internalID: -19488923186782201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_3
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 2921
+        width: 186
+        height: 190
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.09716669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eda1b22d47868380800000000000000
+      internalID: -8969332842497462816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_4
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2932
+        width: 198
+        height: 170
+      alignment: 9
+      pivot: {x: 0.50000125, y: 0.09070399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edc57936771f97a0800000000000000
+      internalID: -6368345551540990496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_5
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2943
+        width: 370
+        height: 142
+      alignment: 9
+      pivot: {x: 0.49059793, y: 0.5735035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34101be5fd037c50800000000000000
+      internalID: 6661683623672943677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_6
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 2943
+        width: 370
+        height: 142
+      alignment: 9
+      pivot: {x: 0.50940305, y: 0.6470036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26069a01005482d50800000000000000
+      internalID: 6712691111177576546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_7
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 2938
+        width: 434
+        height: 142
+      alignment: 9
+      pivot: {x: 0.50801784, y: 0.6715036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbacd7e2b81743800800000000000000
+      internalID: 591222293686766267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_8
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 2929
+        width: 482
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5144372, y: 0.6934082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff54ce592641818f0800000000000000
+      internalID: -569682939207727617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2654
+        width: 470
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0.67647296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ab0b89b58686170800000000000000
+      internalID: 8171896266476796476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_11
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2661
+        width: 446
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72607243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bf721a22f976b10800000000000000
+      internalID: 1974721932706708327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_12
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 2645
+        width: 477
+        height: 146
+      alignment: 9
+      pivot: {x: 0.49940243, y: 0.7033808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce3c81215f2676b0800000000000000
+      internalID: -5298995886053114169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_13
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2625
+        width: 454
+        height: 160
+      alignment: 9
+      pivot: {x: 0.48467508, y: 0.72538453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094340ceaf500c6e0800000000000000
+      internalID: -1819447674198018928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_14
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 2625
+        width: 426
+        height: 176
+      alignment: 9
+      pivot: {x: 0.50000113, y: 0.7515356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cc29a3e6cf382e0800000000000000
+      internalID: -2124577048829440886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_15
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 2600
+        width: 158
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5124605, y: 0.43547156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd31b22456dcf3f00800000000000000
+      internalID: 1098822668887200733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_16
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 2601
+        width: 158
+        height: 213
+      alignment: 9
+      pivot: {x: 0.5476739, y: 0.41120502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88dfc8f9b0bf80a0800000000000000
+      internalID: -6877083793181648758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: groundDash_17
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 2592
+        width: 186
+        height: 222
+      alignment: 9
+      pivot: {x: 0.5337662, y: 0.49885848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cba55237d51a77d0800000000000000
+      internalID: -2919997394389718079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f88701ece74e91546ad4026ffc0e6a99
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      groundDash_0: 8522073808704521438
+      groundDash_1: 4792975130560448295
+      groundDash_10: 8171896266476796476
+      groundDash_11: 1974721932706708327
+      groundDash_12: -5298995886053114169
+      groundDash_13: -1819447674198018928
+      groundDash_14: -2124577048829440886
+      groundDash_15: 1098822668887200733
+      groundDash_16: -6877083793181648758
+      groundDash_17: -2919997394389718079
+      groundDash_18: -7481565810825112002
+      groundDash_2: -19488923186782201
+      groundDash_3: -8969332842497462816
+      groundDash_4: -6368345551540990496
+      groundDash_5: 6661683623672943677
+      groundDash_6: 6712691111177576546
+      groundDash_7: 591222293686766267
+      groundDash_8: -569682939207727617
+      groundDash_9: 8654439673291373540
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

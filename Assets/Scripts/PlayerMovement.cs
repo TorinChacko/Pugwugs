@@ -304,7 +304,7 @@ public class PlayerMovement : MonoBehaviour
 
     void TryBackDash()
     {
-        if (!canDash || isDashing) return;
+        if (!canDash || isDashing || !IsGrounded()) return;
 
         isDashing = true;
         isBackDashing = true;
