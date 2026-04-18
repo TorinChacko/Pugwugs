@@ -105,7 +105,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -241,7 +241,7 @@ TextureImporter:
         width: 186
         height: 190
       alignment: 9
-      pivot: {x: 0.49999967, y: 0.09716669}
+      pivot: {x: 0.48811948, y: 0.43442768}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
         width: 198
         height: 170
       alignment: 9
-      pivot: {x: 0.50000125, y: 0.09070399}
+      pivot: {x: 0.47768086, y: 0.44164753}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -285,7 +285,7 @@ TextureImporter:
         width: 370
         height: 142
       alignment: 9
-      pivot: {x: 0.49059793, y: 0.5735035}
+      pivot: {x: 0.50851357, y: 0.7446719}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -307,7 +307,7 @@ TextureImporter:
         width: 370
         height: 142
       alignment: 9
-      pivot: {x: 0.50940305, y: 0.6470036}
+      pivot: {x: 0.5094024, y: 0.7870509}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -329,7 +329,7 @@ TextureImporter:
         width: 434
         height: 142
       alignment: 9
-      pivot: {x: 0.50801784, y: 0.6715036}
+      pivot: {x: 0.49783424, y: 0.73374575}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -351,7 +351,7 @@ TextureImporter:
         width: 482
         height: 170
       alignment: 9
-      pivot: {x: 0.5144372, y: 0.6934082}
+      pivot: {x: 0.5190207, y: 0.71940345}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -373,7 +373,7 @@ TextureImporter:
         width: 470
         height: 138
       alignment: 9
-      pivot: {x: 0.5, y: 0.67647296}
+      pivot: {x: 0.49999994, y: 0.75653166}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
